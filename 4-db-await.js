@@ -31,10 +31,9 @@ const CREATE_TEACHERS_TABLE = `
 
 async function seedDatabase() {
   const connection = mysql.createConnection(CONNECTION_CONFIG);
+  const execQuery = util.promisify(connection.query.bind(connection));
 
   try {
-    const execQuery = util.promisify(connection.query.bind(connection));
-
     await execQuery(CREATE_STUDENTS_TABLE);
     await execQuery(CREATE_TEACHERS_TABLE);
 
