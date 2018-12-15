@@ -1,0 +1,16 @@
+[
+  {
+    "student_number": 4444,
+    "student_name": "Benno",
+    "date_of_birth": "1995-04-26",
+    "grade": 8.3,
+    "gender": "m"
+  },
+  {
+    "student_number": 3333,
+    "student_name": "Henriata",
+    "date_of_birth": "1998-05-12",
+    "grade": 8.5,
+    "gender": "m"
+  }
+]
